@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            youtube.com
+        </title>
+        
+        <!-- importing google fonts-->
+        <style>
+            p{
+                font-family: Roboto,Arial;
+                margin-top: 0;
+                margin-bottom: 0;
+
+            }
+
+            body{
+                margin:0;
+                padding-top: 80px;
+                padding-left:96px ;
+                padding-right: 24px;
+                background-color: rgb(248,248,248);
+            }
+        </style>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="styles\header.css">
+        <link rel="stylesheet" href="styles/video.css"> 
+        <link rel="stylesheet" href="styles\sidebar.css"> 
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="left-section">
+                <img 
+                class="hamburger-menu"
+                src="icons\hamburger-menu.svg">
+
+                <img 
+                class="youtube-logo"
+                src="icons\youtube-logo.svg">
+            </div>
+
+
+            <div class="middle-section">
+                <input class="searchbar" type="text" placeholder="Search">  <!--for creating a search bar -->
+                <button class="search-button">
+                    <img class="search-logo" src="icons\search.svg">
+                    <div class="tool-tips">
+                        Search
+                    </div>
+                </button>
+                
+                <button class="voice-search-button">
+                    <img class="voice-search-logo" src="icons\voice-search-icon.svg">
+                    <div class="tool-tips">
+                        Search with your voice
+                    </div>
+                </button>
+
+            </div>
+
+
+            <div class="right-section">
+                <div class="right-section-icons-container">
+                    <div class="tool-tips">
+                        Create
+                    </div>
+                    <img class="upload-button" src="icons\upload.svg">
+                </div>
+                
+
+                <div class="right-section-icons-container">
+                    <div class="tool-tips">
+                        YouTube apps
+                    </div>
+                    <img class="youtube-apps-button"  src="icons\youtube-apps.svg">
+                </div>
+
+                <div class="notification-icon-container">
+                    <img class="notifications-button"  src="icons/notifications.svg">
+                    <div class="tool-tips">
+                        Notifications
+                    </div>
+                    <div class="notifications-count">
+                        3
+                    </div>
+                </div>
+                
+                <div >
+                    <img class="my-channel-button" src="channelpictures\my channel.jpg">
+                </div>
+                
+            </div>
+            
+        </div>
+        
+
+        <div class="sidebar">
+            <div class="sidebar-link">
+                <img class="sidebar-buttons"  src="icons\home.svg">
+                <div class="sidebar-button-names">
+                    Home
+                </div>
+            </div>
+
+            <div class="sidebar-link">
+                <img class="sidebar-buttons"  src="icons\explore.svg">
+                <div class="sidebar-button-names">
+                    Explore
+                </div>
+            </div>
+
+            <div class="sidebar-link">
+                <img class="sidebar-buttons"  src="icons\subscriptions.svg">
+                <div class="sidebar-button-names">
+                    Subscriptions
+                </div>
+            </div>
+
+            <div class="sidebar-link">
+                <img class="sidebar-buttons"  src="icons/originals.svg">
+                <div class="sidebar-button-names">
+                    Originals
+                </div>
+            </div>
+
+            <div class="sidebar-link">
+                <img class="sidebar-buttons"  src="icons/youtube-music.svg">
+                <div class="sidebar-button-names">
+                    Youtube Music
+                </div>
+            </div>
+
+            <div class="sidebar-link">
+                <img class="sidebar-buttons"  src="icons/library.svg">
+                <div class="sidebar-button-names">
+                    Library
+                </div>
+            </div>
+        </div>
+
+        <div class="video-grid">
+            <div class="video"> <!--Vertical grid == thumbnial-->
+                <div class="thumbnail-row">
+                    <img class ="thumbnail" src="thumbnailpictures\thumbnail-1.webp">
+                    <div class="video-time">
+                        14:20
+                    </div>
+                </div>
+                <div class="video-details"> <!--vertical grid == title of the video -->  <!-- for creating css grid we need to create it through container-->
+                    <div class="channel-picture"> <!--horizontal grid-->
+                        <img  class="image-profile" src="channelpictures\channel-1.jpeg">
+                    </div>
+                    <div class="vedio-info"> <!--horizontal grid-->
+                        <p class="video-title">
+                            Talking Tech and AI with Google CEO Sundar Pichai!
+                        </p>
+                
+                        <p class="video-author">
+                            Marques Brownlee
+                        </p>
+                
+                        <p class="views">
+                            3.4 veiws &middot; 6 months ago
+                        </p>
+                    </div>
+                    
+                    
+                </div>
+                
+                
+        
+            </div>
+    
+            <div class="video">  
+                <div class="thumbnail-row">
+                    <img class ="thumbnail" src="thumbnailpictures\thumbnail-2.webp">
+                    <div class="video-time">
+                        8:22
+                    </div>
+                </div>
+    
+                <div class="video-details">
+    
+                    <div class="channel-picture" >
+                        <img class="image-profile" src="channelpictures\channel-2.jpeg">
+
+                        </div>
+    
+                    <div class="vedio-info">
+                        <p class="video-title">
+                            
+                                Try Not To Laugh Challenge #9
+                        </p>
+                
+                        <p class="video-author">
+                            Markiplier
+                        </p>
+                
+                        <p class="views">
+                            19M veiws &middot; 4 years ago
+                        </p>
+                
+                    </div>
+                </div>
+                
+            </div>
+    
+    
+            <div class="video">  
+                <div class="thumbnail-row">
+                    <img class ="thumbnail" src="thumbnailpictures\thumbnail-3.webp">
+                    <div class="video-time">
+                        10:55
+                    </div>
+                </div>
+    
+                <div class="video-details">
+    
+                    <div class="channel-picture" >
+                        <img class="image-profile" src="channelpictures\channel-3.jpeg">
+                    </div>
+    
+                    <div class="vedio-info">
+                        <p class="video-title">
+                            
+                            INDIA VS WEST INDIES HIGHLIGHTS 2ND T20 2023
+
+                        </p>
+                
+                        <p class="video-author">
+                            ComputerPakistan
+                        </p>
+                
+                        <p class="views">
+                            312k veiws &middot; 3 hours ago
+                        </p>
+                
+                    </div>
+                </div>
+                
+            </div>
+    
+    
+            <div class="video">  
+                <div class="thumbnail-row">
+                    <img class ="thumbnail" src="thumbnailpictures\thumbnail-4.webp">
+                    <div class="video-time">
+                        22:09
+                    </div>
+                </div>
+    
+                <div class="video-details">
+    
+                    <div class="channel-picture" >
+                        <img class="image-profile" src="channelpictures\channel-4.jpeg">
+                    </div>
+    
+                    <div class="vedio-info">
+                        <p class="video-title">
+                            
+                        The Simplest Math Problem No One Can Solve - Collatz Conjecture
+                        </p>
+                
+                        <p class="video-author">
+                            Veritasium
+                        </p>
+                
+                        <p class="views">
+                            18M veiws &middot; 4 months ago
+                        </p>
+                
+                    </div>
+                </div>
+                
+            </div>
+    
+    
+            <div class="video">  
+                <div class="thumbnail-row">
+                    <img class ="thumbnail" src="thumbnailpictures\thumbnail-5.webp">
+                    <div class="video-time">
+                        11:17
+                    </div>
+                </div>
+    
+                <div class="video-details">
+    
+                    <div class="channel-picture" >
+                        <img class="image-profile" src="channelpictures\channel-5.jpeg">
+                    </div>
+    
+                    <div class="vedio-info">
+                        <p class="video-title">
+                            
+                            Kadane's Algorithm to Maximum Sum Subarray Problem
+                        </p>
+                
+                        <p class="video-author">
+                            CS Dojo
+                        </p>
+                
+                        <p class="views">
+                            519K veiws &middot; 5 years ago
+                        </p>
+                
+                    </div>
+                </div>
+                
+            </div>
+    
+    
+            <div class="video">  
+                <div class="thumbnail-row">
+                    <img class ="thumbnail" src="thumbnailpictures\thumbnail-6.webp">
+                    <div class="video-time">
+                        4:53
+                    </div>
+                </div>
+    
+                <div class="video-details">
+    
+                    <div class="channel-picture" >
+                        <img class="image-profile" src="channelpictures\channel-6.jpeg">
+                    </div>
+    
+                    <div class="vedio-info">
+                        <p class="video-title">
+                            
+                            CIGARETTE IN SOIL - 1 YEAR Time Lapse [8K]
+                        </p>
+                
+                        <p class="video-author">
+                            Photo Owl Time Lapse
+                        </p>
+                
+                        <p class="views">
+                            3.9M veiws &middot; 3 weeks ago
+                        </p>
+                
+                    </div>
+                </div>
+                
+            </div>
+    
+            <div class="video">  
+                <div class="thumbnail-row">
+                    <img class ="thumbnail" src="thumbnailpictures\thumbnail-7.webp">
+                    <div class="video-time">
+                        11:22
+                    </div>
+                </div>
+    
+                <div class="video-details">
+    
+                    <div class="channel-picture" >
+                        <img class="image-profile" src="channelpictures\channel-7.jpeg">
+                    </div>
+    
+                    <div class="vedio-info">
+                        <p class="video-title">
+                            
+                            Google Pixel Tablet Review - Why not in India?
+                        </p>
+                
+                        <p class="video-author">
+                            Tech Burner
+                        </p>
+                
+                        <p class="views">
+                            455K veiws &middot; 1 day ago
+                        </p>
+                
+                    </div>
+                </div>
+                
+            </div>
+    
+    
+            <div class="video">  
+                <div class="thumbnail-row">
+                    <img class ="thumbnail" src="thumbnailpictures\thumbnail-8.webp">
+                    <div class="video-time">
+                        13:01
+                    </div>
+                </div>
+    
+                <div class="video-details">
+    
+                    <div class="channel-picture" >
+                        <img class="image-profile" src="channelpictures\channel-8.jpeg">
+                    </div>
+    
+                    <div class="vedio-info">
+                        <p class="video-title">
+                            
+                            Travelling to Africa's Richest Country!
+                        </p>
+                
+                        <p class="video-author">
+                            Dhruv Rathee Vlogs
+                        </p>
+                
+                        <p class="views">
+                            910Kveiws &middot; 2 days ago
+                        </p>
+                
+                    </div>
+                </div>
+                
+            </div>
+    
+    
+            <div class="video">  
+                <div class="thumbnail-row">
+                    <img class ="thumbnail" src="thumbnailpictures\thumbnail-9.webp">
+                    <div class="video-time">
+                        4:12
+                    </div>
+                </div>
+    
+                <div class="video-details">
+    
+                    <div class="channel-picture" >
+                        <img class="image-profile" src="channelpictures\channel-9.jpeg">
+                    </div>
+    
+                    <div class="vedio-info">
+                        <p class="video-title">
+                            
+                            FilterCopy | When You And Your BFF Are Complete Opposites | Ft. ...
+                        </p>
+                
+                        <p class="video-author">
+                            FilterCopy
+                        </p>
+                
+                        <p class="views">
+                            227K veiws &middot; 13 hours ago
+                        </p>
+                
+                    </div>
+                </div>
+                
+            </div>
+    
+            <div class="video">  
+                <div class="thumbnail-row">
+                    <img class ="thumbnail" src="thumbnailpictures\thumbnail-10.webp">
+                    <div class="video-time">
+                        34:29
+                    </div>
+                </div>
+    
+                <div class="video-details">
+    
+                    <div class="channel-picture" >
+                        <img class="image-profile" src="channelpictures\channel-10.jpeg">
+                    </div>
+    
+                    <div class="vedio-info">
+                        <p class="video-title">
+                            What Does IQ Actually Measure?
+    
+                        </p>
+                
+                        <p class="video-author">
+                            Veritasium
+                        </p>
+                
+                        <p class="views">
+                            2.7M veiws &middot; 3 days ago
+                        </p>
+                
+                    </div>
+                </div>
+                
+            </div>
+    
+    
+            <div class="video">  
+                <div class="thumbnail-row">
+                    <img class ="thumbnail" src="thumbnailpictures\thumbnail-11.webp">
+                    <div class="video-time">
+                        1:09:47
+                    </div>
+                </div>
+    
+                <div class="video-details">
+    
+                    <div class="channel-picture" >
+                        <img class="image-profile" src="channelpictures\channel-11.jpeg">
+                    </div>
+    
+                    <div class="vedio-info">
+                        <p class="video-title">
+                            
+                           TensorFlow Course - Building and Evauating Medical AI Models
+                        </p>
+                
+                        <p class="video-author">
+                            FreeCodeCamp.org
+                        </p>
+                
+                        <p class="views">
+                            23K veiws &middot; 3 days ago
+                        </p>
+                
+                    </div>
+                </div>
+                
+            </div>
+    
+    
+            <div class="video">  
+                <div class="thumbnail-row">
+                    <img class ="thumbnail" src="thumbnailpictures\thumbnail-12.webp">
+                    <div class="video-time">
+                        4:51
+                    </div>
+                </div>
+    
+                <div class="video-details">
+    
+                    <div class="channel-picture" >
+                        <img class="image-profile" src="channelpictures\channel-12 .jpeg">
+                    </div>
+    
+                    <div class="vedio-info">
+                        <p class="video-title">
+                            7 Days Stranded at Sea
+                            
+                        </p>
+                
+                        <p class="video-author">
+                            MrBeast
+                        </p>
+                
+                        <p class="views">
+                            50M veiws &middot; 1 day ago
+                        </p>
+                
+                    </div>
+                </div>
+                
+            </div>
+    
+        </div>
+
+        
+        
+    </body>
+</html>  

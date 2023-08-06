@@ -1,0 +1,208 @@
+
+.searchbar{
+    font-size: 20px;
+    flex:1;
+    height:36px;
+    width:0; /*we keep this so that it can shrink*/
+    padding-left:12px;
+    font-size: 16px;
+    border-left: 1px;
+    border: 1px solid rgb(196, 192, 192);
+   /* short hand css for
+    border-style:solid;
+    border-width: 1px;
+    border-color:rgb(196, 192, 192);*/
+    color: rgb(255, 255, 255);
+    border-radius:2px ;
+    box-shadow: inset 1px 2px 5px rgb(0,0,0,0.05);
+     /*here inset is used for creating shadow inside  format is sides, top and bottom , blur and lastly rgb color */
+} 
+ 
+/*  using this to design the placeholder*/
+.searchbar::placeholder{
+    font-family: Roboto,Arial;
+    font: size 15.5px;
+}
+
+.header{
+
+height :55px;
+display:flex;
+justify-content: space-between;
+position: fixed;
+top:0; /* WE USE THIS TO FIX POSITIONS FOR OUR HEADER TO FULL SIZE*/
+left:0;
+right:0;
+background-color: white;
+border-bottom-width:1px ;
+border-bottom-style: solid ;
+border-bottom-color: rgb(230, 230, 230);
+z-index:100;
+}
+
+.left-section{
+    display: flex;
+    height:55px;
+    width: 150px;
+    align-items: center ;
+    padding-left: 8px;
+
+    
+}
+.hamburger-menu{
+    height:24px;
+    margin-left: 16px;
+    margin-right: 24px;
+}
+
+.youtube-logo{
+    height:20px;
+}
+.middle-section{
+    display: flex;
+    flex:1;
+    margin-left:70px ;
+    margin-right:35px ;
+    justify-items: center;
+    max-width:470px;
+    align-items: center;
+
+}
+
+.search-button{
+    height:39px;
+    width:66px;
+    border-color:rgb(196, 192, 192);
+    background-color: rgb(245,245,245);
+    border-width: 1px;
+    border-style:solid;
+    margin-left: -1px ; /*tomerge */
+    position:relative;
+}
+
+.search-button:hover{
+    background-color:rgb(240,240,240) ;
+}
+.search-button:active{
+    background-color:rgb(236,236,236) ; ;
+}
+.search-logo{
+    height: 24px;
+    width:25px;
+    align-items: center;
+}
+
+.voice-search-button{
+    display: flex;
+    justify-content: center;
+    height:40px;
+    width:40px;
+    border:none;
+    border-radius: 20px;
+    margin-left: 9px;
+    background-color:rgb(245, 245, 245);
+    position:relative;
+}
+.voice-search-logo{
+    height:24px;
+    margin-top: 6px;
+}
+
+.right-section{
+    width: 180px;
+    display:flex;
+    margin-right: 18px;
+    flex-shrink: 0; /*no matter what it wont shrink*/
+    justify-content: space-between;
+    align-items: center;
+
+}
+.upload-button{
+    height: 24px;
+
+}
+
+.upload-button:hover{
+    cursor:pointer;
+}
+
+.youtube-apps-button{
+    height: 24px; 
+
+}
+ .youtube-apps-button:hover{
+    cursor: pointer;
+ }
+
+.notifications-button{
+    height:24px;
+
+    
+}
+
+.notifications-button:hover{
+    cursor: pointer;
+}
+.notification-icon-container{
+    position: relative;  
+    display: flex;
+    justify-content: center;
+}
+.notifications-count{
+    position:absolute;
+    background-color: rgb(200,0,0);
+    color:white;
+    top:-1px;
+    right:-3.5px;
+    font-family: roboto,arial;
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1.5px;
+    padding-bottom: 1.5px;
+    border-radius:10px ;
+}
+
+.my-channel-button{
+    height:32px;
+    border-radius: 20px;    
+}
+
+.my-channel-button:hover{
+    cursor: pointer;
+}
+
+.tool-tips{
+    position: absolute;
+    font-family: roboto,arial;
+    background-color: gray;
+    color: white;
+    padding-top:8px;
+    padding-right:9px;
+    padding-left: 9px;
+    padding-bottom: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom:-35px;
+    opacity: 0;
+    white-space: nowrap; /*prevents from wrapping*/
+
+}
+.search-button:hover .tool-tips,.voice-search-button:hover .tool-tips{   /* we use this if we want to display tooltip only when we are hovering over certain elemets*/
+    opacity:1
+}
+
+.right-section-icons-container{
+    position:relative;
+    display: flex;
+    justify-content: center;
+}
+
+.right-section-icons-container:hover .tool-tips, .notification-icon-container:hover .tool-tips{
+    opacity:1
+}
+
+
+
+
+/* grids adjusting themselves with the size of the window is known as responsive designs*/
